@@ -1,0 +1,35 @@
+// ===============================================
+// Button style variables
+// ===============================================
+
+:root {
+
+	// BUTTONS
+	// -----------------------------------------------
+
+	// Basic
+	--button-bg-cl: var(--cl-violet-50);
+	--button-bg-grad: var(--gradient-fill-cl);
+	--button-default-shadow: 0 5px 15px var(--ca-violet-75-25);
+	--button-shadow: var(--button-default-shadow);
+
+	// Header
+	--header-button-shadow: inset 0 2px 6px var(--ca-black-9);
+
+	// Footer
+	--footer-button-shadow: 0 5px 15px var(--ca-violet-50-25);
+
+	// Promo
+	--promo-button-bg-cl: var(--cl-violet-50);
+
+	// Swiper
+	--swiper-button-bg-cl: var(--cl-white);
+	--swiper-button-shadow: 0 2px 4px var(--ca-blue-50-15);
+	--swiper-button-default-cl: var(--cl-violet-50);
+	--swiper-button-hover-cl: var(--cl-blue-550);
+	--swiper-button-disabled-bg-cl: var(--cl-violet-900);
+	--swiper-button-disabled-cl: var(--cl-violet-730);
+
+	// -----------------------------------------------
+	// BUTTONS
+}

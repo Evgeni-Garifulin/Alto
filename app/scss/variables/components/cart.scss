@@ -1,0 +1,43 @@
+:root {
+	// HEADER CART
+	// -----------------------------------------------
+
+	// Basic
+	--cart-bg-cl: var(--cl-white);
+	--cart-shadow: 0 5px 15px var(--ca-violet-75-25);
+
+	// Item
+	--cart-item-border: 1px solid var(--cl-violet-900);
+
+	// Head
+	--cart-head-shadow: 0 4px 10px var(--ca-black-5);
+	--cart-head-icon-cl: var(--cl-violet-50);
+
+	// Scroll
+	--cart-scrollbar-track-bg-cl: var(--ca-violet-120-30);
+	--cart-scrollbar-thumb-bg-cl: var(--cl-violet-120);
+
+	// Counter
+	--cart-counter-default-bg-cl: var(--cl-violet-900);
+	--cart-counter-focus-bg-cl: var(--cl-white);
+
+	--cart-counter-cl: var(--cl-graphite-100);
+
+	--cart-counter-default-border: 1px solid var(--cl-violet-900);
+	--cart-counter-hover-border: 1px solid var(--cl-violet-120);
+	--cart-counter-focus-border: 1px solid var(--cl-violet-120);
+
+	--cart-counter-button-default-bg-cl: var(--cl-violet-900);
+	--cart-counter-button-hover-bg-cl: var(--cl-violet-800);
+	--cart-counter-button-action-bg-cl: var(--cl-violet-900);
+
+	--cart-counter-button-default-border: 1px solid var(--cl-violet-900);
+	--cart-counter-button-hover-border: 1px solid var(--cl-violet-800);
+	--cart-counter-button-action-border: 1px solid var(--cl-violet-900);
+
+	--cart-counter-button-icon-active-cl: var(--cl-violet-50);
+	--cart-counter-button-icon-disabled-cl: var(--cl-violet-120);
+
+	// -----------------------------------------------
+	// HEADER CART
+}

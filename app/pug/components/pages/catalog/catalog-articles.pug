@@ -1,0 +1,23 @@
+mixin card (cardTitle = '', cardSrcset = '', cardImg = '', height = '', cardLink = '')
+	a.category.category--md(href=cardLink)
+		picture.category__img
+			source(srcset=cardSrcset type='image/webp')
+			source(srcset=cardImg type='image/jpeg')
+			img(src=cardImg loading='lazy' alt=cardTitle width=width height=height)
+		.category__name.category__name--lg.text-primary=cardTitle
+
+.catalog-articles
+	h1.catalog-articles__title.text-primary Каталог
+	.row
+		.col-3
+			+card(' Солярии', './img/webp/pages/catalog/articles/solarium.webp', './img/pages/catalog/articles/solarium.jpg', '100', '/solariums.html')
+		.col-3
+			+card(' Запчасти', './img/webp/pages/catalog/articles/parts.webp', './img/pages/catalog/articles/parts.jpg', '100', '№')
+		.col-3
+			+card(' Лампы', './img/webp/pages/catalog/articles/lamps.webp', './img/pages/catalog/articles/lamps.jpg', '100', '№')
+		.col-3
+			+card(' Косметика', './img/webp/pages/catalog/articles/cosmetics.webp', './img/pages/catalog/articles/cosmetics.jpg', '100', '№')
+		.col-3
+			+card(' Ремонт', './img/webp/pages/catalog/articles/repair.webp', './img/pages/catalog/articles/repair.jpg', '100', '№')
+		.col-3
+			+card(' Товары б/У', './img/webp/pages/catalog/articles/refresh.webp', './img/pages/catalog/articles/refresh.jpg', '100', '№')

@@ -1,0 +1,27 @@
+:root {
+
+	// BADGES
+	// -----------------------------------------------
+
+	// Basic
+	--badge-cl: var(--cl-white);
+
+	// Menu counter
+	--badge-menu-bg-cl: var(--cl-blue-500);
+	--badge-menu-border-cl: var(--cl-white);
+
+	// Basket counter
+	--basket-cl: var(--cl-white);
+	--badge-basket-border-cl: var(--cl-white);
+
+	// primary
+	--badge-primary-bg-cl: var(--cl-violet-120);
+	--badge-primary-shadow: 0 2px 4px var(--ca-black-5);
+
+	// info
+	--badge-info-bg-cl: var(--cl-blue-500);
+	--badge-info-shadow: 0 2px 4px var(--ca-black-5);
+
+	// -----------------------------------------------
+	// BADGES
+}

@@ -1,0 +1,44 @@
+.article {
+	--article-shadow: var(--article-default-shadow);
+
+	border-radius: 5px;
+	background-color: var(--article-bg-cl);
+	box-shadow: var(--article-shadow);
+	transition: all .3s;
+
+	&--large {
+		max-width: 670px;
+		max-height: 370px;
+	}
+
+	&:hover {
+		--article-shadow: var(--article-hover-shadow);
+	}
+
+	&:active {
+		--article-shadow: none;
+	}
+
+	&__link {
+		color: currentColor;
+		text-decoration: none;
+		transition: text-decoration .3s;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__title {
+		max-width: 380px;
+	}
+
+	&__img-link {
+		width: 260px;
+		max-height: 363px;
+	}
+
+	&__img {
+		border-radius: 5px;
+	}
+}

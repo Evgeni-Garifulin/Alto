@@ -1,0 +1,191 @@
+block header
+	header(class='header--secondary py-5 sm:d-none xl:d-block')
+		.container
+			.header__inner.d-flex.flex-ai-center
+				ul.header__social-list.d-flex.flex-ai-center.mr-25
+					li.header__social-item
+						a.link-primary-sm(href='https://www.vk.com/')
+							svg.header__social-icon(height=18 width=18)
+								title Вконтакте
+								use(xlink:href='/img/svg/icons.svg#vk')
+					li.header__social-item
+						a.link-primary-sm(href='https://www.instagram.com/')
+							svg.header__social-icon(height=18 width=18)
+								title Инстаграмм
+								use(xlink:href='/img/svg/icons.svg#instagram')
+					li.header__social-item
+						a.link-primary-sm(href='https://www.facebook.com/')
+							svg.header__social-icon(height=18 width=18)
+								title Фейсбук
+								use(xlink:href='/img/svg/icons.svg#facebook')
+				nav.header__menu.mr-auto
+					ul.header__menu-list.d-flex.flex-ai-center
+						li.header__menu-item
+							a.link-primary-sm(href='#') О компании
+						li.header__menu-item
+							a.link-primary-sm(href='#') Доставка и оплата
+						li.header__menu-item
+							a.link-primary-sm(href='#') Контакты
+						li.header__menu-item
+							a.link-primary-sm(href='mailto:info@tancity.ru') info@tancity.ru
+				ul.header__contacts-list.d-flex.flex-ai-center.flex-jc-center.mr-20
+					li.header__contacts-item
+						a.d-flex.flex-ai-center.link-primary-sm(href='https://web.whatsapp.com')
+							svg.header__contacts-icon.d-block(height=15 width=15)
+								title Вотсапп
+								use(xlink:href='/img/svg/icons.svg#whatsapp')
+							span.header__contacts-name WhatsApp
+					li.header__contacts-item
+						a.d-flex.flex-ai-center.link-primary-sm(href='https://viber.com')
+							svg.header__contacts-icon.d-block(height=15 width=15)
+								title Вайбер
+								use(xlink:href='/img/svg/icons.svg#viber')
+							span.header__contacts-name Viber
+				a.link-light-md.mr-30(href='tel:+74964106693') 8 (495) 410-66-93
+				button.button.header__button(type='button') Обратный звонок
+	header.header--primary.py-20
+		.container
+			.header__inner.d-flex.flex-ai-center
+				a.header__logo.mr-25.d-inline-block(href='/')
+					img(src='/img/logo.svg' alt='tancity-logo' width=120)
+				nav(class='header__menu mr-40 sm:d-none xl:d-block')
+					ul.header__menu-list.d-flex.flex-ai-center
+						li.header__menu-item
+							a.link-secondary-md(href='/solariums.html') Солярии
+						li.header__menu-item
+							a.link-secondary-md(href='#') Запчасти
+						li.header__menu-item
+							a.link-secondary-md(href='#') Лампы
+						li.header__menu-item
+							a.link-secondary-md(href='#') Косметика
+						li.header__menu-item
+							a.link-secondary-md(href='#') Товары б/у
+						li.header__menu-item
+							a.link-secondary-md(href='#') Услуги
+						li.header__menu-item.pos-relative
+							a.link-secondary-md(href='#') Акции
+							.badge.header__menu-item-counter.pos-absolute.py-2.px-5 6
+				form.header__search.pos-relative.mr-45(action='#')
+					input.header__search-field.w-100p.pl-15(name='s' type='search' placeholder='Поиск' autocomplete='off' aria-label='Поиск по товарам')
+					svg.header__search-field-icon.pos-absolute.d-block(width=15 height=15)
+						use(xlink:href='/img/svg/icons.svg#loupe')
+				.header__basket.pos-relative.d-flex.flex-ai-center.flex-jc-center.mr-30
+					span корзина
+					svg.header__basket-icon.d-block.ml-2(width=19 height=20)
+						use(xlink:href='/img/svg/icons.svg#basket')
+					.header__basket-counter.pos-absolute.py-6.px-5
+						span.header__basket-count 99
+				.cart.header__cart.pos-absolute(style='display:none')
+					.cart__head.d-flex.flex-jc-between.py-10.px-15
+						.cart__title.text-primary Корзина
+						button.cart__close
+							svg.icon.cart__close-icon(width=10 height=10)
+								use(xlink:href='./img/svg/icons.svg#cross')
+					.cart__inner
+						.cart__list.mr-4
+							.cart__item
+								picture.cart__item-img
+									source(srcset='./img/webp/cart/solarium-cart.webp' type='image/webp')
+									img(src='./img/cart/solarium-cart.jpg' alt='Запчасти' height=55 width=55)
+								.cart__item-description
+									a.cart__item-title.link-primary-sm(href='#') Вертикальный солярий Megasun Pure Energy 5.0
+									button.cart__item-delete(type='button' aria-label='Удалить товар')
+										svg.cart__item-delete-icon(width=15 height=15)
+											use(xlink:href='./img/svg/icons.svg#trash')
+								.cart__item-prices
+									.cart__counter
+										button.cart__counter-button.cart__counter-button--minus
+											svg.cart__counter-button-icon(width=10 height=10)
+												use(xlink:href='./img/svg/icons.svg#minus')
+										input.cart__counter-input(type='number' min='1' value='1')
+										button.cart__counter-button.cart__counter-button--plus
+											svg.cart__counter-button-icon(width=10 height=10)
+												use(xlink:href='./img/svg/icons.svg#plus')
+									.cart__item-price.text-primary
+										svg.cart__item-price-icon(width=7 height=7)
+											use(xlink:href='./img/svg/icons.svg#multiplication')
+										span.cart__item-price-current 1 275 000 &#8381;
+										svg.cart__item-price-icon(width=7 height=7)
+											use(xlink:href='./img/svg/icons.svg#equals')
+									.cart__item-price-total.text-primary 1 275 000 &#8381;
+							.cart__item
+								picture.cart__item-img
+									source(srcset='./img/webp/cart/solarium-cart.webp' type='image/webp')
+									img(src='./img/cart/solarium-cart.jpg' alt='Запчасти' height=55 width=55)
+								.cart__item-description
+									a.cart__item-title.link-primary-sm(href='#') Вертикальный солярий Megasun Pure Energy 5.0
+									button.cart__item-delete(type='button' aria-label='Удалить товар')
+										svg.cart__item-delete-icon(width=15 height=15)
+											use(xlink:href='./img/svg/icons.svg#trash')
+								.cart__item-prices
+									.cart__counter
+										button.cart__counter-button.cart__counter-button--minus
+											svg.cart__counter-button-icon(width=10 height=10)
+												use(xlink:href='./img/svg/icons.svg#minus')
+										input.cart__counter-input(type='number' data-min='1' min='1' value='1')
+										button.cart__counter-button.cart__counter-button--plus
+											svg.cart__counter-button-icon(width=10 height=10)
+												use(xlink:href='./img/svg/icons.svg#plus')
+									.cart__item-price.text-primary
+										svg.cart__item-price-icon(width=7 height=7)
+											use(xlink:href='./img/svg/icons.svg#multiplication')
+										span.cart__item-price-current 1 275 000 &#8381;
+										svg.cart__item-price-icon(width=7 height=7)
+											use(xlink:href='./img/svg/icons.svg#equals')
+									.cart__item-price-total.text-primary 1 275 000 &#8381;
+							.cart__item
+								picture.cart__item-img
+									source(srcset='./img/webp/cart/solarium-cart.webp' type='image/webp')
+									img(src='./img/cart/solarium-cart.jpg' alt='Запчасти' height=55 width=55)
+								.cart__item-description
+									a.cart__item-title.link-primary-sm(href='#') Вертикальный солярий Megasun Pure Energy 5.0
+									button.cart__item-delete(type='button' aria-label='Удалить товар')
+										svg.cart__item-delete-icon(width=15 height=15)
+											use(xlink:href='./img/svg/icons.svg#trash')
+								.cart__item-prices
+									.cart__counter
+										button.cart__counter-button.cart__counter-button--minus
+											svg.cart__counter-button-icon(width=10 height=10)
+												use(xlink:href='./img/svg/icons.svg#minus')
+										input.cart__counter-input(type='number' data-min='1' value='1')
+										button.cart__counter-button.cart__counter-button--plus
+											svg.cart__counter-button-icon(width=10 height=10)
+												use(xlink:href='./img/svg/icons.svg#plus')
+									.cart__item-price.text-primary
+										svg.cart__item-price-icon(width=7 height=7)
+											use(xlink:href='./img/svg/icons.svg#multiplication')
+										span.cart__item-price-current 1 275 000 &#8381;
+										svg.cart__item-price-icon(width=7 height=7)
+											use(xlink:href='./img/svg/icons.svg#equals')
+									.cart__item-price-total.text-primary 1 275 000 &#8381;
+							.cart__item
+								picture.cart__item-img
+									source(srcset='./img/webp/cart/solarium-cart.webp' type='image/webp')
+									img(src='./img/cart/solarium-cart.jpg' alt='Запчасти' height=55 width=55)
+								.cart__item-description
+									a.cart__item-title.link-primary-sm(href='#') Вертикальный солярий Megasun Pure Energy 5.0
+									button.cart__item-delete(type='button' aria-label='Удалить товар')
+										svg.cart__item-delete-icon(width=15 height=15)
+											use(xlink:href='./img/svg/icons.svg#trash')
+								.cart__item-prices
+									.cart__counter
+										button.cart__counter-button.cart__counter-button--minus
+											svg.cart__counter-button-icon(width=10 height=10)
+												use(xlink:href='./img/svg/icons.svg#minus')
+										input.cart__counter-input(type='number' data-min='1' value='1')
+										button.cart__counter-button.cart__counter-button--plus
+											svg.cart__counter-button-icon(width=10 height=10)
+												use(xlink:href='./img/svg/icons.svg#plus')
+									.cart__item-price.text-primary
+										svg.cart__item-price-icon(width=7 height=7)
+											use(xlink:href='./img/svg/icons.svg#multiplication')
+										span.cart__item-price-current 1 275 000 &#8381;
+										svg.cart__item-price-icon(width=7 height=7)
+											use(xlink:href='./img/svg/icons.svg#equals')
+									.cart__item-price-total.text-primary 1 275 000 &#8381;
+					.cart__bottom.py-10.px-15
+						.cart__bottom-inner.d-flex.flex-ai-center.flex-jc-between
+							.cart__total-sum.text-primary Итого
+								span.cart__total-price.text-primary 321 725 000 &#8381;
+							button.button.cart__button-offer.py-10.px-20 Оформить заказ
+			.page-overlay(style='display:none')

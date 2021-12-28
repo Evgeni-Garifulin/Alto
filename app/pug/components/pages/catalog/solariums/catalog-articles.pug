@@ -1,0 +1,19 @@
+mixin card (cardTitle = '', cardSrcset = '', cardImg = '', width = '', heigth= '', cardLink = '')
+	.col-3
+		a.category.category--lg(href=cardLink)
+			picture.category__img
+				source(srcset=cardSrcset type='image/webp')
+				source(srcset=cardImg type='image/jpeg')
+				img(src=cardImg loading='lazy' alt=cardTitle width=width heigth=height)
+			.category__name.category__name--lg.text-primary=cardTitle
+
+.catalog-articles
+	h1.catalog-articles__title.text-primary Солярии
+	.row.row--lg
+		+card(' Вертикальные солярии', './img/webp/pages/catalog/solariums/vertical-solarium.webp', './img/pages/catalog/solariums/vertical-solarium.jpg', '265', '241', '/vertical-solariums.html')
+		+card(' Горизонтальные солярии', './img/webp/pages/catalog/solariums/horizontal-solarium.webp', './img/pages/catalog/solariums/horizontal-solarium.jpg', '265', '241', '#')
+		+card(' Коллагенарии', './img/webp/pages/catalog/solariums/collagenarium.webp', './img/pages/catalog/solariums/collagenariumjpg', '265', '241', '#')
+		+card(' Коллариумы', './img/webp/pages/catalog/solariums/collarium.webp', './img/pages/catalog/solariums/collarium.jpg', '265', '241', '#')
+		+card(' Домашние солярии', './img/webp/pages/catalog/solariums/household-solarium.webp', './img/pages/catalog/solariums/household-solarium.jpg', '265', '241', '#')
+		+card(' Солярии б/у', './img/webp/pages/catalog/solariums/old-solarium.webp', './img/pages/catalog/solariums/old-solarium.jpg', '265', '241', '#')
+		+card(' Аренда соляриев', './img/webp/pages/catalog/solariums/rent-solarium.webp', './img/pages/catalog/solariums/rent-solarium.jpg', '265', '241', '#')

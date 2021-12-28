@@ -1,0 +1,24 @@
+// ===============================================
+// Root file for variables
+// ===============================================
+
+// Layout
+@import './pages/layout/body';
+@import './pages/layout/header';
+@import './pages/layout/footer';
+
+// Components
+@import './components/colors';
+@import './components/typography';
+@import './components/badges';
+@import './components/cart';
+@import './components/buttons';
+@import './components/cards';
+@import './components/articles';
+@import './components/breadcrumbs';
+
+// Sections
+@import './pages/index/promo';
+@import './pages/index/catalog';
+@import './pages/index/service';
+@import './pages/catalogue/catalogue';

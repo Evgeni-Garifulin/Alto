@@ -1,0 +1,21 @@
+// ===============================================
+// Breadcrumbs variables
+// ===============================================
+
+
+:root {
+
+	// НАЗВАНИЕ РАЗДЕЛА
+	// -----------------------------------------------
+
+	--breadcrumbs-default-cl: var(--cl-violet-50);
+	--breadcrumbs-disabled-cl: var(--ca-violet-50-25);
+	--breadcrumbs-hover-cl: var(--cl-blue-500);
+	--breadcrumbs-cl: var(--breadcrumbs-default-cl);
+
+	--breadcrumbs-lh: var(--fz-sm);
+	--breadcrumbs-fz: var(--lh-xl);
+
+	// -----------------------------------------------
+	// НАЗВАНИЕ РАЗДЕЛА
+}

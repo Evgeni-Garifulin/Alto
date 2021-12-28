@@ -1,0 +1,24 @@
+.button {
+	display: inline-flex;
+	align-items: center;
+	padding: 12px 24px;
+	border: none;
+	border-radius: 40px;
+	background-color: var(--button-bg-cl);
+	background-image: var(--button-bg-grad);
+	box-shadow: var(--button-shadow);
+	color: var(--cl-white);
+	cursor: pointer;
+	transition: opacity .2s;
+
+
+	&:hover {
+		opacity: .9;
+	}
+
+	&:active {
+		--button-shadow: none;
+
+		opacity: 1;
+	}
+}

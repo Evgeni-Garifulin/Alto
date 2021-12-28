@@ -1,0 +1,29 @@
+.badge {
+	--badge-fw: var(--fw-b);
+	--badge-fz: 10px;
+	--badge-lh: var(--lh-lg);
+
+	max-width: 100%;
+	color: var(--badge-cl);
+	font-size: var(--badge-fz);
+	font-weight: var(--badge-fw);
+	line-height: var(--badge-lh);
+	letter-spacing: .05em;
+	text-transform: uppercase;
+
+	&--primary {
+		margin-top: 5px;
+		padding: 5px 10px;
+		border-radius: 2px 10px 10px 2px;
+		background-color: var(--badge-primary-bg-cl);
+		box-shadow: var(--badge-primary-shadow);
+	}
+
+	&--info {
+		margin-top: 5px;
+		padding: 5px 10px;
+		border-radius: 2px 10px 10px 2px;
+		background-color: var(--badge-info-bg-cl);
+		box-shadow: var(--badge-info-shadow);
+	}
+}

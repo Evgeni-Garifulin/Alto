@@ -1,0 +1,21 @@
+.service {
+	&__inner {
+		border-radius: 5px;
+		background-color: var(--section-service-bg-cl);
+		box-shadow: var(--section-service-shadow);
+	}
+
+	&__title {
+		max-width: 250px;
+	}
+
+	&__button {
+		--service-button-fw: var(--fw-b);
+		--service-button-fz: 12px;
+
+		font-size: var(--service-button-fz);
+		font-weight: var(--service-button-fw);
+		letter-spacing: .07em;
+		text-transform: uppercase;
+	}
+}

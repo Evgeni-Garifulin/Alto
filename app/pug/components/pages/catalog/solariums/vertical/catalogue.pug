@@ -1,0 +1,36 @@
+mixin cardWhiteRecPop
+	.col-4
+		.card.card--catalogue
+			.card__img-container
+				a.card__img(href='#')
+					picture
+						source(srcset='./img/webp/pages/catalog/vertical-solariums/solarium-red.webp' type='image/webp')
+						source(srcset='./img/pages/catalog/vertical-solariums/solarium-red.jpg' type='image/jpeg')
+						img(src='./img/pages/catalog/vertical-solariums/solarium-red.jpg' loading='lazy' alt='Вертикальный солярий Megasun Pure Energy 5.0' width='265' height='277')
+				.card__badges
+					.badge.badge--primary популярное
+					.badge.badge--info  рекомендуем
+			.card__description
+				a.card__link.link-primary(href='#') Вертикальный солярий Megasun Pure Energy 5.0
+				.card__spec.text-dark 52 x 180W
+				form.card__prices
+					.card__prices-inner
+						p.card__price.text-primary 275 000  &#8381;
+						p.card__discount
+							span.card__old-price.text-dark 1 350 000 &#8381;
+							span.card__discount.text-light -100 000 &#8381;
+					button.button.card__button
+						svg.icon.card__button-icon(height='20' width='30')
+							title Добавить в корзину
+							use(xlink:href='./img/svg/icons.svg#add-to-basket')
+
+.row.row--xl.catalogue
+	aside.catalogue__filters.col-3
+		.catalogue__filters-inner
+			p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus possimus inventore provident, porro quo quod non repellat natus est. Minima, hic dignissimos totam facere labore odio earum eum animi dolore.Odio, nisi nihil. Animi, ipsam ea at, maxime molestias eum atque quisquam doloribus dolorem, magnam iusto numquam commodi distinctio impedit necessitatibus soluta laudantium rem unde? Eligendi id atque in voluptates.Voluptates ex omnis sapiente dolorum necessitatibus provident nulla, a iure eum vitae cumque ipsam harum qui earum rerum, pariatur ea odit commodi doloremque velit enim? Optio esse repudiandae vel perferendis.Iste nulla, porro animi rem eaque cupiditate sapiente placeat aliquid voluptatibus sequi veniam officiis minima sit maiores consectetur reiciendis, ducimus facilis adipisci fugiat nemo dicta error debitis. Itaque, accusantium aperiam?Magni accusamus reprehenderit unde quas, accusantium eligendi necessitatibus vel quam cum reiciendis consectetur eos distinctio dolores perferendis quisquam sequi odit! Modi vero cupiditate ullam! Eos libero praesentium neque autem quo?Aliquam, id minima consectetur temporibus asperiores dicta commodi aspernatur eveniet voluptates nostrum. Dolorum nam voluptates, obcaecati reiciendis cupiditate in dolorem ducimus distinctio officiis ut repellendus, esse
+	.catalogue__list.col-9
+		.catalogue__control
+		.catalogue__result
+			.row
+				- for (let i = 0; i < 100; i++)
+					+cardWhiteRecPop
