@@ -1,0 +1,74 @@
+.card-c {
+	--card-c-shadow: var(--card-c-default-shadow);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	height: 177px;
+	padding: 20px 0;
+	border-radius: 10px;
+	background-color: var(--card-c-bg-cl);
+	box-shadow: var(--card-c-shadow);
+	text-decoration: none;
+	transition: all .2s;
+
+	&--md {
+		min-height: 200px;
+		border-radius: 5px;
+	}
+
+	&--lg {
+		min-height: 310px;
+		border-radius: 5px;
+	}
+
+	&:hover {
+		--card-c-shadow: var(--card-c-hover-shadow);
+	}
+
+	&:active {
+		--card-c-shadow: none;
+	}
+
+	&--delivery {
+		--card-c-icon-delivery-cl: var(--card-c-icon-delivery-default-cl);
+
+		color: var(--card-c-icon-delivery-cl);
+
+		&:hover {
+			--card-c-icon-delivery-cl: var(--card-c-icon-delivery-hover-cl);
+		}
+	}
+}
+
+.card-c__icon {
+	fill: currentColor;
+}
+
+.card-c__name {
+	--card-c-name-fw: var(--fw-sb);
+	--card-c-name-fz: var(--fz-sm);
+	--card-c-name-lh: var(--lh-lg);
+
+	--card-c-name-lg-fz: var(--fz-lg);
+
+	font-size: var(--card-c-name-fz);
+	font-weight: var(--card-c-name-fw);
+	line-height: var(--card-c-name-lh);
+	letter-spacing: .1em;
+	text-transform: uppercase;
+
+	&--delivery {
+		max-width: 220px;
+		height: 45px;
+		text-align: center;
+	}
+
+	&--lg {
+		margin-bottom: 30px;
+		font-size: var(--card-c-name-lg-fz);
+		letter-spacing: .01em;
+		text-transform: none;
+	}
+}

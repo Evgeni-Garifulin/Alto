@@ -5,6 +5,7 @@
 		--footer-logo-description-fz: 12px;
 		--footer-logo-description-lh: var(--lh-md);
 
+		margin-top: 4px;
 		font-size: var(--footer-logo-description-fz);
 		line-height: var(--footer-logo-description-lh);
 	}
@@ -28,7 +29,13 @@
 	&__column-time {
 		--footer-column-time-fz: var(--fz-sm);
 
+		margin: 5px 0;
 		font-size: var(--footer-column-time-fz);
+	}
+
+	&__column-text {
+		margin-top: 30px;
+		margin-bottom: 10px;
 	}
 
 	&__column-social-list {
@@ -53,6 +60,7 @@
 		--footer-column-adress-fz: var(--fz-sm);
 		--footer-column-adress-lh: var(--lh-xl);
 
+		margin-bottom: 20px;
 		font-size: var(--footer-column-adress-fz);
 		line-height: var(--footer-column-adress-lh);
 	}
@@ -75,6 +83,10 @@
 
 	&__nav-list {
 		list-style-type: none;
+	}
+
+	&__nav-item {
+		margin-top: 10px;
 	}
 
 	&__nav-link {
@@ -107,6 +119,7 @@
 		--footer-button-fw: var(--fw-sb);
 		--footer-button-fz: var(--fz-sm);
 
+		margin-bottom: 20px;
 		box-shadow: var(--footer-button-shadow);
 		font-size: var(--footer-button-fz);
 		font-weight: var(--footer-button-fw);

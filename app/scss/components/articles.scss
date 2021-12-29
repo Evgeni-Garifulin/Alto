@@ -1,14 +1,17 @@
 .article {
 	--article-shadow: var(--article-default-shadow);
 
+	display: flex;
+	flex-direction: column;
 	border-radius: 5px;
 	background-color: var(--article-bg-cl);
 	box-shadow: var(--article-shadow);
 	transition: all .3s;
 
-	&--large {
+	&--lg {
 		max-width: 670px;
 		max-height: 370px;
+		padding: 0;
 	}
 
 	&:hover {
@@ -31,6 +34,7 @@
 
 	&__title {
 		max-width: 380px;
+		margin-bottom: 15px;
 	}
 
 	&__img-link {
@@ -40,5 +44,15 @@
 
 	&__img {
 		border-radius: 5px;
+	}
+
+	&__date {
+		margin-bottom: 10px;
+	}
+
+	&__text {
+		&--lg {
+			margin-bottom: 5px;
+		}
 	}
 }

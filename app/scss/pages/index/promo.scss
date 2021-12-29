@@ -14,7 +14,11 @@
 		--promo-preview-lh: var(--lh-xl);
 		--promo-preview-active-fw: var(--fw-sb);
 
+		display: flex;
+		flex-grow: 0;
+		align-items: center;
 		min-height: 85px;
+		padding: 20px 18px 20px 30px;
 		background-color: var(--promo-bg-cl);
 		opacity: .5;
 		cursor: pointer;
@@ -35,7 +39,10 @@
 		}
 
 		&--more {
+			display: flex;
+			align-items: center;
 			min-height: 85px;
+			padding: 20px 30px;
 			background-color: var(--promo-bg-cl);
 			font-size: var(--promo-preview-fz);
 			line-height: var(--promo-preview-lh);
@@ -63,6 +70,7 @@
 		}
 
 		&-title {
+			margin-bottom: 10px;
 			letter-spacing: .01em;
 		}
 
@@ -70,6 +78,7 @@
 			--promo-description-fz: var(--fz-xl);
 			--promo-description-lh: var(--lh-xl);
 
+			margin-bottom: 20px;
 			font-size: var(--promo-description-fz);
 			line-height: var(--promo-description-lh);
 			opacity: .5;
@@ -90,7 +99,7 @@
 		&-image {
 			display: none;
 
-			&.promotion__content-image--active {
+			&--active {
 				display: block;
 			}
 		}
