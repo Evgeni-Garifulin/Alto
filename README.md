@@ -13,6 +13,4 @@
 Инофрмация о себе и контактные данные:
 ========================
 * Резюме: https://ekaterinburg.hh.ru/resume/0ec6d5eaff01d478c40039ed1f594d6e666c72
-* Телефон: +7 (999) 561-71-17
-* Telegram: @evgeni_garifulin
 * Почта: melegarifulin@gmail.com
